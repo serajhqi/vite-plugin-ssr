@@ -3,8 +3,7 @@ export { devConfig }
 import type { Plugin } from 'vite'
 import { apply, addSsrMiddleware, javascriptFileExtensions } from '../utils'
 import { getGlobRoots } from './generateImportGlobs/getGlobRoots'
-import * as vite from 'vite'
-const viteVersion = (vite as { version?: string }).version || '2.?.?'
+const viteVersion = '3.?.?'
 
 function devConfig(): Plugin[] {
   return [
